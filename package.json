@@ -1,6 +1,6 @@
 {
   "name": "yaj-sse",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill",
   "main": "yaj-sse.js",
   "directories": {
@@ -28,6 +28,6 @@
     "url": "https://github.com/byjg/jquery-sse/issues"
   },
   "dependencies": {
-    "yaj": ">=0.1.0"
+    "yaj": "^0.1.1"
   }
 }
