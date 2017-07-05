@@ -1,11 +1,11 @@
 <html>
 
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="../jquery.sse.js"></script>
+    <script src="yaj.js"></script>
+    <script src="../node_modules/yaj/yaj.min.js"></script>
     <script>
         console.log('-- START --');
-        var w = $.SSE('sse-server.php', {
+        var w = new SSE('sse-server.php', {
             onOpen: function (e) {
                 console.log("Open");
                 console.log(e);

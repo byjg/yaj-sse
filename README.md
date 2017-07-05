@@ -1,8 +1,8 @@
-# jQuery SSE 
+# Yaj SSE 
 
 ## Description
 
-A lightweigth jQuery Plugin for Server-Sent Events (SSE) EventSource Polyfill. 
+A lightweigth (<2kb) Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill. 
 This plugin try to use the native EventSource object if it supported by the browser.
 If there is no native support the request is made by ajax requests (polling).
 You do not need to change the server side nor the client side.
@@ -12,7 +12,7 @@ You do not need to change the server side nor the client side.
 Client Side
 
 ```javascript
-var sse = $.SSE('http://example.com/sse-server.php', {
+var sse = new SSE('http://example.com/sse-server.php', {
     onMessage: function(e){ 
         console.log("Message"); console.log(e); 
     }
@@ -29,26 +29,26 @@ echo "\n";
 
 ## Dependencies
 
-* jQuery
+* Yaj (only for ajax fallback)
 
 ## Install
 
-Just download the repository and point to the jQuery plugin:
+Just download the repository and point to the Yaj plugin:
 
 ```html
-<script src="jquery.sse.js" ></script>
+<script src="yaj-sse.js" ></script>
 ```
 
 or
 
 ```html
-<script src="jquery.sse.min.js" ></script>
+<script src="yaj-sse.min.js" ></script>
 ```
 
-You can also install using bower:
+You can also install using yarn:
 
 ```bash
-bower install jquery-sse
+yarn add yaj-sse
 ```
 
 ## Usage:
@@ -56,7 +56,7 @@ bower install jquery-sse
 #### Constructor
 
 ```
-var sse = $.SSE(url, settings);
+var sse = new SSE(url, settings);
 ```
 
 * url: URL for the server will be sent the events to this page;
@@ -67,7 +67,7 @@ var sse = $.SSE(url, settings);
 All the options:
 
 ```
-var sseObject = $.SSE('sse-server.php', {
+var sseObject = new SSE('sse-server.php', {
     onOpen: function (e) {},
     onEnd: function (e) {},
     onError: function (e) {},
@@ -203,7 +203,7 @@ echo "\n";
 ## Minify
 
 ```
-uglifyjs --compress 'drop_console,drop_debugger' --mangle -r '$,require,exports,_' -o jquery.sse.min.js jquery.sse.js
+npm run minify
 ```
 
 ## References
