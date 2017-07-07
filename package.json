@@ -28,6 +28,6 @@
     "url": "https://github.com/byjg/yaj-sse/issues"
   },
   "dependencies": {
-    "yaj": "^0.1.1"
+    "yaj": "^0.1.3"
   }
 }

@@ -21,9 +21,8 @@ var SSE = function (url, customSettings) {
         events: {}
     };
 
-    for (var attrname in customSettings) {
-        _settings[attrname] = customSettings[attrname];
-    }
+    yoCopy(customSettings, _settings);
+
     var _type = null;
     var _instance = null;
 
