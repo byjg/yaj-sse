@@ -68,7 +68,7 @@ var SSE = function (url, customSettings) {
             headers[key] = _settings.headers[key];
         }
 
-        yo().request({
+        Yaj.request({
             url: _url,
             method: 'GET',
             headers: headers,

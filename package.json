@@ -8,7 +8,8 @@
   },
   "scripts": {
     "minify-yaj": "./node_modules/.bin/uglifyjs --compress 'drop_console,drop_debugger' --mangle -o yaj-sse.min.js yaj-sse.js",
-    "minify": "npm run minify-yaj"
+    "minify": "npm run minify-yaj",
+    "publish-patch": "npm test && npm run minify-yaj && git add yaj.min.* && git commit -m 'minify' && npm version patch && git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,6 @@
     "url": "https://github.com/byjg/yaj-sse/issues"
   },
   "dependencies": {
-    "yaj": "^0.1.3"
+    "yaj": "^1.0.1"
   }
 }
