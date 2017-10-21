@@ -1,6 +1,6 @@
 {
   "name": "yaj-sse",
-  "version": "0.3.0",
+  "version": "0.2.1",
   "description": "Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill",
   "main": "yaj-sse.js",
   "directories": {
@@ -9,7 +9,7 @@
   "scripts": {
     "minify-yaj": "./node_modules/.bin/uglifyjs --compress 'drop_console,drop_debugger' --mangle -o yaj-sse.min.js yaj-sse.js",
     "minify": "npm run minify-yaj",
-    "publish-patch": "npm test && npm run minify-yaj && git add yaj.min.* && git commit -m 'minify' && npm version patch && git push && git push --tags && npm publish"
+    "publish-patch": "npm run minify-yaj && git add yaj-*.min.* && git commit -m 'minify' && npm version patch && git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
