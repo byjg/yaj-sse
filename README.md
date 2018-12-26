@@ -1,13 +1,12 @@
 # Yaj SSE 
 
-## Description
 
 A lightweigth (<2kb) Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill. 
 This plugin try to use the native EventSource object if it supported by the browser.
 If there is no native support the request is made by ajax requests (polling).
 You do not need to change the server side nor the client side.
 
-## Example
+# Example
 
 Client Side
 
@@ -27,11 +26,11 @@ echo "data: My Message\n";
 echo "\n";
 ```
 
-## Dependencies
+# Dependencies
 
 * Yaj (only for ajax fallback)
 
-## Install
+# Install
 
 Just download the repository and point to the Yaj plugin:
 
@@ -51,9 +50,9 @@ You can also install using yarn:
 yarn add yaj-sse
 ```
 
-## Usage:
+# Usage:
 
-#### Constructor
+## Constructor
 
 ```
 var sse = new SSE(url, settings);
@@ -62,7 +61,7 @@ var sse = new SSE(url, settings);
 * url: URL for the server will be sent the events to this page;
 * settings: The events and options for the SSE instance
 
-#### Settings List
+## Settings List
 
 All the options:
 
@@ -168,7 +167,7 @@ Note: As the EventSource does not support send custom headers to the request,
 the object will fallback automatically to 'forceAjax=true', even this it is not set.
 
 
-#### Methods
+# Methods
 
 **start**
 
@@ -187,7 +186,7 @@ sse.stop();
 ```
 
 
-## Quirks
+# Quirks
 
 The ajax does not support the streaming as the event source supports. In that case we recommend
 create a server without streaming and set the "retry" to determine query frequency;
@@ -200,13 +199,13 @@ echo "data: My Message\n";
 echo "\n";
 ```
 
-## Minify
+# Minify
 
 ```
 npm run minify
 ```
 
-## References
+# References
 
 * http://www.w3.org/TR/2009/WD-eventsource-20091029/
 * https://developer.mozilla.org/en-US/docs/Server-sent_events/Using_server-sent_events
