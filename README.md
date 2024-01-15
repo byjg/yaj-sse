@@ -7,7 +7,7 @@
 [![GitHub release](https://img.shields.io/github/release/byjg/yaj-sse.svg)](https://github.com/byjg/yaj-sse/releases/)
 [![](https://data.jsdelivr.com/v1/package/npm/yaj-sse/badge)](https://www.jsdelivr.com/package/npm/yaj-sse)
 
-A lightweigth (<2kb) Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill. 
+A lightweigth (\<2kb) Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill. 
 This plugin try to use the native EventSource object if it supported by the browser.
 If there is no native support the request is made by ajax requests (polling).
 You do not need to change the server side nor the client side.
@@ -219,15 +219,15 @@ docker run -it --rm -p 8080:80 -v $PWD:/var/www/html byjg/php:7.4-fpm-nginx
 ```
 
 Open the browser:
-http://localhost:8080/examples/sse-client.html
+[http://localhost:8080/examples/sse-client.html](http://localhost:8080/examples/sse-client.html)
 
 
 ## References
 
-* http://www.w3.org/TR/2009/WD-eventsource-20091029/
-* https://developer.mozilla.org/en-US/docs/Server-sent_events/Using_server-sent_events
-* http://html5doctor.com/server-sent-events/
-* http://www.html5rocks.com/en/tutorials/eventsource/basics/
+* [http://www.w3.org/TR/2009/WD-eventsource-20091029/](http://www.w3.org/TR/2009/WD-eventsource-20091029/)
+* [https://developer.mozilla.org/en-US/docs/Server-sent_events/Using_server-sent_events](https://developer.mozilla.org/en-US/docs/Server-sent_events/Using_server-sent_events)
+* [http://html5doctor.com/server-sent-events/](http://html5doctor.com/server-sent-events/)
+* [http://www.html5rocks.com/en/tutorials/eventsource/basics/](http://www.html5rocks.com/en/tutorials/eventsource/basics/)
 
 
 ----
