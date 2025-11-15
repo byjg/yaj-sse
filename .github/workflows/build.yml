@@ -8,8 +8,6 @@ on:
   pull_request:
     branches:
       - master
-  schedule:
-    - cron: "0 8 * * 1"
 
 jobs:
   Build:
@@ -18,13 +16,14 @@ jobs:
     strategy:
       matrix:
         node-version:
+          - "22"
           - "20"
           - "18"
           - "16"
           - "14"
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: yarn
 
   # Publish:
@@ -48,6 +47,7 @@ jobs:
     needs: Build
     uses: byjg/byjg.github.io/.github/workflows/add-doc.yaml@master
     with:
-      folder: js
+      folder: php
       project: ${{ github.event.repository.name }}
-    secrets: inherit
+    secrets:
+      DOC_TOKEN: ${{ secrets.DOC_TOKEN }}
