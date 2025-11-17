@@ -7,7 +7,7 @@
 [![GitHub release](https://img.shields.io/github/release/byjg/yaj-sse.svg)](https://github.com/byjg/yaj-sse/releases/)
 [![](https://data.jsdelivr.com/v1/package/npm/yaj-sse/badge)](https://www.jsdelivr.com/package/npm/yaj-sse)
 
-A lightweight (<2kb) Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill.
+A lightweight (&lt;2kb) Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill.
 This plugin tries to use the native EventSource object if it is supported by the browser.
 If there is no native support, the request is made by AJAX requests (polling).
 You do not need to change the server side nor the client side.

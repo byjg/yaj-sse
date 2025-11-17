@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Getting Started
 
-A lightweight (<2kb) Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill. This plugin tries to use the native EventSource object if it's supported by the browser. If there is no native support, the request is made by ajax requests (polling). You do not need to change the server side nor the client side.
+A lightweight (&lt;2kb) Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill. This plugin tries to use the native EventSource object if it's supported by the browser. If there is no native support, the request is made by ajax requests (polling). You do not need to change the server side nor the client side.
 
 ## Dependencies
 
