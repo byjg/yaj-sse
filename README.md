@@ -1,4 +1,13 @@
+---
+tags: [node.js, javascript]
+---
+
 # Yaj SSE
+
+A lightweight (&lt;2kb) Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill.
+This plugin tries to use the native EventSource object if it is supported by the browser.
+If there is no native support, the request is made by AJAX requests (polling).
+You do not need to change the server side nor the client side.
 
 [![Build Status](https://github.com/byjg/yaj-sse/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/byjg/yaj-sse/actions/workflows/build.yml)
 [![Opensource ByJG](https://img.shields.io/badge/opensource-byjg-success.svg)](http://opensource.byjg.com)
@@ -6,11 +15,6 @@
 [![GitHub license](https://img.shields.io/github/license/byjg/yaj-sse.svg)](https://opensource.byjg.com/opensource/licensing.html)
 [![GitHub release](https://img.shields.io/github/release/byjg/yaj-sse.svg)](https://github.com/byjg/yaj-sse/releases/)
 [![](https://data.jsdelivr.com/v1/package/npm/yaj-sse/badge)](https://www.jsdelivr.com/package/npm/yaj-sse)
-
-A lightweight (&lt;2kb) Yaj Plugin for Server-Sent Events (SSE) EventSource Polyfill.
-This plugin tries to use the native EventSource object if it is supported by the browser.
-If there is no native support, the request is made by AJAX requests (polling).
-You do not need to change the server side nor the client side.
 
 ## Quick Start
 
@@ -36,12 +40,12 @@ echo "\n";
 
 Comprehensive documentation is available in the `/docs` folder:
 
-1. **[Getting Started](docs/getting-started.md)** - Installation and basic usage
-2. **[API Reference](docs/api-reference.md)** - Constructor, methods, and parameters
-3. **[Event Handlers](docs/events.md)** - Available events and custom events
-4. **[Configuration Options](docs/options.md)** - Options and custom headers
-5. **[Examples](docs/examples.md)** - Practical code examples
-6. **[Known Limitations & Quirks](docs/quirks.md)** - Important behavior notes
+1. **[Getting Started](getting-started)** - Installation and basic usage
+2. **[API Reference](api-reference)** - Constructor, methods, and parameters
+3. **[Event Handlers](events)** - Available events and custom events
+4. **[Configuration Options](options)** - Options and custom headers
+5. **[Examples](examples)** - Practical code examples
+6. **[Known Limitations & Quirks](quirks)** - Important behavior notes
 
 ## Installation
 
